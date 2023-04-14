@@ -1,0 +1,144 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* display: flex; */
+}
+
+nav {
+  background-color: #002b5b;
+}
+
+.slider {
+  margin-top: 80px;
+  width: 100vw;
+  height: 700px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 700px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100vw;
+  height: 700px;
+}
+
+/* css for manual transisition */
+
+.navigation-manual {
+  position: absolute;
+  width: 100vw;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #159895;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #159895;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+
+/* css for automation transisition */
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 660px;
+}
+
+.navigation-auto div {
+  border: 2px solid #159895;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #159895;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #159895;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #159895;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #159895;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background: #159895;
+}
+
+.costum-card {
+  width: 18rem;
+}
+
+/* footer */
+.footer {
+  width: 100vw;
+  height: 320px;
+  background-color: #002b5b;
+  color: white;
+}
+
+footer img {
+  width: 40px;
+  margin: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
