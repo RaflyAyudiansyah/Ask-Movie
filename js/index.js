@@ -28,7 +28,7 @@ for (i = 1; i <= 30; i++) {
   console.log(randomNumElement);
 
   $.ajax({
-    url: "http://www.omdbapi.com/?apikey=db45875a&s=" + randomArrElement,
+    url: "https://www.omdbapi.com/?apikey=db45875a&s=" + randomArrElement,
     success: (results) => {
       const moviesShow = results.Search;
       show += showCard2(moviesShow[randomNumElement]);
@@ -43,7 +43,7 @@ for (i = 1; i <= 30; i++) {
 // tombol detail diklik
 $(".modal-button-kedua").on("click", function () {
   $.ajax({
-    url: "http://www.omdbapi.com/?apikey=db45875a&i=" + $(this).data("imdbid"),
+    url: "https://www.omdbapi.com/?apikey=db45875a&i=" + $(this).data("imdbid"),
     success: (m) => {
       const movieDetails = showMovieDetail(m);
       $(".modal-body").html(movieDetails);
@@ -56,7 +56,7 @@ $(".modal-button-kedua").on("click", function () {
 
 $(".search-btn").on("click", function () {
   $.ajax({
-    url: "http://www.omdbapi.com/?apikey=db45875a&s=" + $(".input-key").val(),
+    url: "https://www.omdbapi.com/?apikey=db45875a&s=" + $(".input-key").val(),
     success: (results) => {
       const movies = results.Search;
       let cards = "";
@@ -68,7 +68,7 @@ $(".search-btn").on("click", function () {
       // tombol detail diklik
       $(".modal-button").on("click", function () {
         $.ajax({
-          url: "http://www.omdbapi.com/?apikey=db45875a&i=" + $(this).data("imdbid"),
+          url: "https://www.omdbapi.com/?apikey=db45875a&i=" + $(this).data("imdbid"),
           success: (m) => {
             const movieDetail = showMovieDetail(m);
             $(".modal-body").html(movieDetail);
