@@ -10,7 +10,7 @@ nav {
 .slider {
   margin-top: 80px;
   width: 100vw;
-  height: 700px;
+  height: 40vmax;
   overflow: hidden;
 }
 
@@ -124,9 +124,9 @@ nav {
 /* footer */
 .footer {
   width: 100vw;
-  height: 320px;
   background-color: #002b5b;
   color: white;
+  padding-bottom: 10px;
 }
 
 footer img {

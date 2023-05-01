@@ -8,8 +8,8 @@ setInterval(function () {
 }, 5000);
 
 let show = "";
-for (i = 1; i <= 12; i++) {
-  const randomArr = ["black", "white", "yellow", "harry potter", "america", "mother", "mama", "fast", "baby", "gosh"];
+for (i = 1; i <= 30; i++) {
+  const randomArr = ["black", "white", "yellow", "blue", "harry potter", "america", "mother", "mama", "fast", "baby", "gosh", "asia", "father", "brother", "sea"];
   let randomArrElement = randomArr[getRandomElementIndex()];
 
   function getRandomElementIndex() {
@@ -86,7 +86,7 @@ $(".search-btn").on("click", function () {
 });
 
 function showCard(m) {
-  return `<div class="col-md-4 my-2">
+  return `<div class="col-md-2 my-2">
                 <div class="card">
                     <img src="${m.Poster}" class="card-img-top" alt="" />
                     <div class="card-body">
@@ -99,7 +99,7 @@ function showCard(m) {
 }
 
 function showCard2(m) {
-  return `<div class="col-md-4 my-2">
+  return `<div class="col-md-2 my-2">
                 <div class="card">
                     <img src="${m.Poster}" class="card-img-top" alt="" />
                     <div class="card-body">
